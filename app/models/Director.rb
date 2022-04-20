@@ -14,4 +14,12 @@ class Director < ActiveRecord::Base
         self.movies.order('RT_score asc').limit(1)
     end
 
+    def self.oldest
+        Director.all.order('age desc').limit(1)
+    end
+
+    def self.youngest
+        Director.all.order('age asc').limit(1)
+    end
+
 end
