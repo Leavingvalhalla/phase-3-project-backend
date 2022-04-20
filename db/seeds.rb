@@ -87,6 +87,61 @@ Movie.create(
     director_id: 1
 )
 
+Movie.create(
+    name: 'A Fistful of Fingers',
+    year: 1995, 
+    RT_score: nil,
+    director_id: 2
+)
+
+Movie.create(
+    name: 'Shaun of the Dead',
+    year: 2004, 
+    RT_score: 92,
+    director_id: 2
+)
+
+Movie.create(
+    name: 'Hot Fuzz',
+    year: 2007, 
+    RT_score: 91,
+    director_id: 2
+)
+
+Movie.create(
+    name: 'Scott Pilgrm vs. the World',
+    year: 2010, 
+    RT_score: 82,
+    director_id: 2
+)
+
+Movie.create(
+    name: "The World's End",
+    year: 2013, 
+    RT_score: 89,
+    director_id: 2
+)
+
+Movie.create(
+    name: 'Baby Driver',
+    year: 2017, 
+    RT_score: 92,
+    director_id: 2
+)
+
+Movie.create(
+    name: 'The Sparks Brothers',
+    year: 2021, 
+    RT_score: 96,
+    director_id: 2
+)
+
+Movie.create(
+    name: 'Last Night In Soho',
+    year: 2021, 
+    RT_score: 76,
+    director_id: 2
+)
 
 
 puts "✅ Done seeding!"
