@@ -18,7 +18,7 @@ Director.create(
 puts "🌱 Seeding movies..."
 
 Movie.create(
-    name: 'Shopping for Fangs'
+    name: 'Shopping for Fangs',
     year: 1997,
     RT_score: 50,
     director_id: 1
@@ -39,7 +39,7 @@ Movie.create(
 )
 
 Movie.create(
-    name: The Fast and the Furious: Tokyo Drift,
+    name: 'The Fast and the Furious: Tokyo Drift',
     year: 2006, 
     RT_score: 38,
     director_id: 1
