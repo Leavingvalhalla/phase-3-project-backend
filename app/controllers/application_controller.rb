@@ -47,7 +47,7 @@ class ApplicationController < Sinatra::Base
 
   patch '/movies/:id' do
     movie = Movie.find(params[:id])
-    movie.update(RT_score: [params[:RT_score]])
+    movie.update(RT_score: params[:RT_score])
     movie.to_json
   end
 
