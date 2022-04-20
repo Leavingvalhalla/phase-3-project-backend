@@ -143,5 +143,39 @@ Movie.create(
     director_id: 2
 )
 
+Movie.create(
+    name: 'Brick',
+    year: 2005, 
+    RT_score: 80,
+    director_id: 3
+)
+
+Movie.create(
+    name: 'The Brothers Bloom',
+    year: 2008, 
+    RT_score: 68,
+    director_id: 3
+)
+
+Movie.create(
+    name: 'Looper',
+    year: 2012, 
+    RT_score: 93,
+    director_id: 3
+)
+
+Movie.create(
+    name: 'Star Wars: The Last Jedi',
+    year: 2017, 
+    RT_score: 91,
+    director_id: 3
+)
+
+Movie.create(
+    name: 'Knives Out',
+    year: 2019, 
+    RT_score: 97,
+    director_id: 3
+)
 
 puts "✅ Done seeding!"
