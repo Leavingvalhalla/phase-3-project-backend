@@ -10,20 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_20_192809) do
+ActiveRecord::Schema.define(version: 2022_04_21_151615) do
 
-  create_table "directors", force: :cascade do |t|
-    t.string "name"
-    t.integer "age"
-    t.string "pic"
+  create_table "labels", force: :cascade do |t|
+    t.integer "label_name"
   end
 
-  create_table "movies", force: :cascade do |t|
-    t.string "name"
-    t.integer "year"
-    t.integer "RT_score"
-    t.string "poster"
-    t.integer "director_id"
+  create_table "priorities", force: :cascade do |t|
+    t.integer "level"
+  end
+
+  create_table "todos", force: :cascade do |t|
+    t.string "task"
+    t.integer "priority_id"
+    t.integer "label_id"
   end
 
 end
