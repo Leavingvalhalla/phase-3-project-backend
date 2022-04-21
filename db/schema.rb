@@ -15,12 +15,14 @@ ActiveRecord::Schema.define(version: 2022_04_20_192809) do
   create_table "directors", force: :cascade do |t|
     t.string "name"
     t.integer "age"
+    t.string "pic"
   end
 
   create_table "movies", force: :cascade do |t|
     t.string "name"
     t.integer "year"
     t.integer "RT_score"
+    t.string "poster"
     t.integer "director_id"
   end
 
