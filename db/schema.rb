@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_04_21_151615) do
 
   create_table "labels", force: :cascade do |t|
-    t.integer "label_name"
+    t.string "label_name"
   end
 
   create_table "priorities", force: :cascade do |t|
