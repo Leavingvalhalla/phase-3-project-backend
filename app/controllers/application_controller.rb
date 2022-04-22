@@ -34,6 +34,11 @@ class ApplicationController < Sinatra::Base
     Label.all.to_json
   end
 
+  get '/labels/:id' do
+    label = Label.find(params[:id])
+    label.to_json
+  end
+
   post '/labels' do
     label = Label.create(label_name: params[:label_name])
     label.to_json
