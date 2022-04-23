@@ -58,4 +58,8 @@ class ApplicationController < Sinatra::Base
     Todo.all.order('task asc').to_json
   end
 
+  get '/todos/time_created' do
+    Todo.all.to_json
+  end
+
 end
