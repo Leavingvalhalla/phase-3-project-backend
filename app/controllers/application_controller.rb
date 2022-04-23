@@ -50,4 +50,12 @@ class ApplicationController < Sinatra::Base
     label.to_json
   end
 
+  get '/todos/priority' do
+  Todo.all.order('priority_id').to_json
+  end
+
+  get '/todos/alphabetical' do
+    Todo.all.order('task asc').to_json
+  end
+
 end
