@@ -13,6 +13,7 @@ class Todo < ActiveRecord::Base
    def self.order_by_time_created
       Todo.all
    end
+   
 end
 
 
